@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "f575c563-87f8-419f-b360-321073b2853d",
+		"name": "whitepanda api ",
+		"description": "API Testing ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Vehicles",
+			"item": [
+				{
+					"name": "Get all vehicle details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"model\": \"FERRARI\",\n            \"seatingcapacity\": 2,\n            \"rentperday\": 20000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/vehicles",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get vehicle details by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"model\": \"FERRARI\",\n            \"seatingcapacity\": 2,\n            \"rentperday\": 20000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/vehicles/5ead66ebaa1b230453bdc957",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"vehicles",
+								"5ead66ebaa1b230453bdc957"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create new vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{     \"carno\":\"TN 45 FK 9865\",\n     \"model\": \"Tesla\",\n            \"seatingcapacity\": 4,\n            \"rentperday\": 19000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/vehicles",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update vehicle details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \"carno\":\"TN 59 BA 4444\",\n     \"model\": \"Maserati\",\n            \"seatingcapacity\": 4,\n            \"rentperday\": 16000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/vehicles/5ead748edd29820512613308",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"vehicles",
+								"5ead748edd29820512613308"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete vehicle details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"model\": \"Maserati\",\n            \"seatingcapacity\": 4,\n            \"rentperday\": 16000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/vehicles/5ead66ebaa1b230453bdc957",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"vehicles",
+								"5ead66ebaa1b230453bdc957"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Testing API",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "Get all booking details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"model\": \"Maserati\",\n            \"seatingcapacity\": 4,\n            \"rentperday\": 16000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bookings",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get booking details by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"model\": \"Maserati\",\n            \"seatingcapacity\": 4,\n            \"rentperday\": 16000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bookings/5ead8b1e1400cc059c934e54",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings",
+								"5ead8b1e1400cc059c934e54"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\":\"5ead748edd29820512613308\",\n\"customername\":\"Sabrina\",\n        \"phno\":\"97251255439\",\n        \"issuedate\":\"1/2/2016\",\n        \"returndate\":\"1/3/2016\"\n\t\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bookings",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update booking details",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\": \"5ead74badd2982051261330a\",\n        \"customername\": \"Tom Harvey JR\",\n        \"phno\": 97256345639,\n        \"issuedate\": \"9/1/2015\",\n        \"returndate\": \"1/2/2016\"\n        \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bookings/5eae68c5f018860f3354f548",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings",
+								"5eae68c5f018860f3354f548"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete booking",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"vehicleId\": \"5ead74badd2982051261330a\",\n        \"customername\": \"Tom\",\n        \"phno\": 97256984639,\n        \"issuedate\": \"9/1/2015\",\n        \"returndate\": \"1/2/2016\"\n        \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/bookings//5eae60724e226409f3feed74",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"bookings",
+								"",
+								"5eae60724e226409f3feed74"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Testing API",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
