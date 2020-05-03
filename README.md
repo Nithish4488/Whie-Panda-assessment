@@ -1,2 +1,2 @@
 # White-Panda-assessment
-searching of vehicles should be done by provide their id(mongodb id)
+searching of vehicles should be done by providing their id(mongodb id)
